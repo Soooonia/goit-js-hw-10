@@ -8,13 +8,13 @@
 
 import { fetchBreeds } from "./cat-api.js";
 
-// Отримати посилання на елемент <select> і <p> з повідомленням про завантаження та помилкою
+
 const breedSelect = document.querySelector(".breed-select");
 const loader = document.querySelector(".loader");
 const error = document.querySelector(".error");
 const catInfo = document.querySelector(".cat-info");
 
-// При завантаженні сторінки викликати функцію fetchBreeds() та заповнити вибірку
+
 document.addEventListener("DOMContentLoaded", () => {
   loader.style.display = "block";
   error.style.display = "none";
