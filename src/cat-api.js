@@ -2,7 +2,7 @@
 
 export function fetchBreeds() {
     const url = "https://api.thecatapi.com/v1/breeds";
-    return fetch(`${url}?api_key=live_QNuZvtSN3UGa7HP2HfgztxO5DMSYVh0cDuh0B1hhe45xqMmgQ8Liq19NZ2mMEB4T`)
+    return fetch(`${url}?api_key=${api_key}`)
       .then((response) => response.json())
       .then((data) => data.map((breed) => ({ id: breed.id, name: breed.name })))
       .catch((error) => {
@@ -10,5 +10,5 @@ export function fetchBreeds() {
         throw error;
       });
   }
-  
+  const api_key = '.live_QNuZvtSN3UGa7HP2HfgztxO5DMSYVh0cDuh0B1hhe45xqMmgQ8Liq19NZ2mMEB4T'
   

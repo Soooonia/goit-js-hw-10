@@ -51,18 +51,21 @@ breedSelect.addEventListener("change", () => {
     })
     .then((response) => response.json())
     .then((data) => {
+      const textContainer = document.createElement("div");
       const breedName = document.createElement("h2");
       breedName.textContent = data.name;
-      catInfo.appendChild(breedName);
+      textContainer.appendChild(breedName);
 
       const description = document.createElement("p");
       description.textContent = data.description;
-      catInfo.appendChild(description);
+      textContainer.appendChild(description);
 
       const temperament = document.createElement("p");
       temperament.textContent = `Temperament: ${data.temperament}`;
-      catInfo.appendChild(temperament);
-      catInfo.style.display = "flex";
+      textContainer.appendChild(temperament);
+      catInfo.appendChild(textContainer);
+
+      catInfo.style.display = "block";
       loader.style.display = "none";
     })
     .catch((error) => {
