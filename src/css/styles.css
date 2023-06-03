@@ -1,0 +1,28 @@
+.cat-info{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.cat-info img {
+    padding-top: 15px;
+    width: 370;
+height: 350;
+}
+
+.cat-info h2 {
+    font-weight: bold;
+  margin-left: 20;
+  }
+ 
+  .loader{
+    font-weight: bold; 
+  }
+  /* .cat-info h2,
+  .cat-info p {
+    display: block;
+  } */
+
+  /* .cat-info h2,
+  .cat-info p {
+    margin: 0;
+  } */

@@ -62,7 +62,7 @@ breedSelect.addEventListener("change", () => {
       const temperament = document.createElement("p");
       temperament.textContent = `Temperament: ${data.temperament}`;
       catInfo.appendChild(temperament);
-      catInfo.style.display = "block";
+      catInfo.style.display = "flex";
       loader.style.display = "none";
     })
     .catch((error) => {
