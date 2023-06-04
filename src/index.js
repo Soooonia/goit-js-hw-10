@@ -52,6 +52,7 @@ breedSelect.addEventListener("change", () => {
     .then((response) => response.json())
     .then((data) => {
       const textContainer = document.createElement("div");
+      textContainer.classList.add("text-container");
       const breedName = document.createElement("h2");
       breedName.textContent = data.name;
       textContainer.appendChild(breedName);
@@ -61,7 +62,7 @@ breedSelect.addEventListener("change", () => {
       textContainer.appendChild(description);
 
       const temperament = document.createElement("p");
-      temperament.textContent = `Temperament: ${data.temperament}`;
+      temperament.innerHTML =`Temperament: <span class="temperament-word">${data.temperament}</span>`;
       textContainer.appendChild(temperament);
       catInfo.appendChild(textContainer);
 

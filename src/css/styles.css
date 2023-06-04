@@ -1,8 +1,6 @@
-/* .cat-info{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start; */
-/* } */
+ .cat-info{
+    position: relative;
+}
 .cat-info img {
     padding-top: 15px;
     width: 370;
@@ -11,18 +9,19 @@ height: 350;
 
 .cat-info h2 {
     font-weight: bold;
-  /* margin-left: 20; */
+  
+  }
+  .temperament-word{
+    font-weight: bold; 
   }
  
   .loader{
     font-weight: bold; 
   }
-  /* .cat-info h2,
-  .cat-info p {
-    display: block;
-  } */
+  .text-container{
+    position: absolute;
+    top: 0;
+    left: 400;
+  }
 
-  /* .cat-info h2,
-  .cat-info p {
-    margin: 0;
-  } */
+ 
