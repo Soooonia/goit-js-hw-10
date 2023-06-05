@@ -1,4 +1,4 @@
- .cat-info{
+ /* .cat-info{
     position: relative;
 }
 .cat-info img {
@@ -22,6 +22,34 @@ height: 350;
     position: absolute;
     top: 0;
     left: 400;
-  }
+  } */
+  @import '~node_modules/modern-normalize/modern-normalize.css';
 
+
+
+  /* .text-container{
+    position: absolute;
+    top: 0;
+    left: 400;
+  } 
+   */
+
+  
+  .invisible {
+    display: none;
+  }
+  
+  /* .cat-info {
+    position: relative;
+  } */
+  .cat-info img {
+      padding-top: 15px;
+      width: 370;
+  height: 350;
+  }
+  
+  
+  .hidden-select {
+    display: none;
+  }
  
